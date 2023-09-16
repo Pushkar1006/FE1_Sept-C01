@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delhi Tourism</title>
+    <style>
+        header {
+            background-color: black;
+            color: white;
+            padding-left: 10px;
+            padding-bottom: 3px;
+            padding-top: 1px;
+        }
+
+        form {
+            height: 390px;
+            border: 1px black solid;
+            width: 30%;
+            padding-top: 10px;
+        }
+
+        .input-field {
+            height: 30px;
+            width: 90%;
+            margin-top: 5px;
+            margin-left: 10px;
+            margin-bottom: 5px;
+        }
+
+        label {
+            font-family: "Times New Roman", Times, serif;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .checkbox {
+            height: 17px;
+            width: 17px;
+            margin-top: 3px;
+        }
+
+        .button {
+            background-color: rgb(36, 35, 35);
+            color: white;
+            border-radius: 3px;
+            height: 30px;
+            font-family: "Times New Roman", Times, serif;
+            width: 100px;
+            font-size: 18px;
+            margin-top: 8px;
+            margin-left: 10px;
+        }
+
+        table {
+            border-collapse: collapse;
+            height: 150px;
+        }
+
+        td {
+            text-align: center;
+            height: 20px;
+            width: 150px;
+        }
+
+        nav {
+            background-color: rgb(36, 35, 35);
+            color: white;
+            width: fit-content;
+            height: 25px;
+            padding-top: 5px;
+        }
+
+        .navigate {
+            color: white;
+            margin: 10px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <header>
+            <h1>Delhi</h1>
+            <p>Delhi, where history meets modernity.</p>
+        </header>
+    </section>
+    <hr />
+    <section>
+        <nav>
+            <a href="#description" class="navigate">Description</a> |
+            <a href="#attractions" class="navigate">Attractions</a> |
+            <a href="#stats" class="navigate">Statistics</a> |
+            <a href="#feedback" class="navigate">Feedback</a> |
+            <a href="#quotes" class="navigate">Quotes</a> |
+            <a href="#contact" class="navigate">Contact</a>
+        </nav>
+    </section>
+    <hr />
+    <section id="description">
+        <h2>Discover Delhi</h2>
+        <img src="https://www.tripsavvy.com/thmb/pAlZ4kx0tM9HFLmgkYbqMlfxaok=/2116x1417/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-846359134-5b515328c9e77c003738e40c.jpg"
+            alt="Red Fort" height="350px" width="600px" />
+        <p>
+            Delhi is the capital city of India and is regarded as the heart of the
+            nation. The city is popular for its enriched culture and heritage.
+        </p>
+    </section>
+    <hr />
+    <section id="attractions">
+        <h2>Attractions</h2>
+        <h3>Main Attractions</h3>
+        <ol>
+            <li>Red Fort</li>
+            <li>Qutab Minar</li>
+            <li>Lotus Temple</li>
+            <li>Iscon Temple</li>
+        </ol>
+        <h3>Local Favourites</h3>
+        <ul type="square">
+            <li>Chandni Chowk</li>
+            <li>Sarojini Nagar</li>
+            <li>Cannaught Palace</li>
+            <li>Lajpat Nagar</li>
+            <ul type="circle">
+                <li>Sant Nagar</li>
+                <li>North Campus</li>
+                <li>Kamla Nagar</li>
+                <li>Cyber Hub</li>
+            </ul>
+        </ul>
+    </section>
+    <hr />
+    <section id="stats">
+        <h2>City Statistics</h2>
+        <table border="1">
+            <tr>
+                <th>Attribute</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Population</td>
+                <td>5 Millions</td>
+            </tr>
+            <tr>
+                <td>Landmarks</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Parks</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>Schools</td>
+                <td>120</td>
+            </tr>
+            <tr>
+                <td>Beaches</td>
+                <td>0</td>
+            </tr>
+        </table>
+    </section>
+    <hr />
+    <section id="feedback">
+        <h2>Feedback</h2>
+        <form method="post">
+            <label for="name">Name*: </label><br />
+            <input type="text" name="name" id="name" class="input-field" required placeholder="Name" /><br />
+            <label for="phoneNumber">Phone Number*: </label><br />
+            <input type="number" name="phoneNumber" id="phoneNumber" class="input-field" required
+                placeholder="6478930332" /><br />
+            <label for="email">Email*: </label><br />
+            <input type="email" name="email" id="email" class="input-field" required
+                placeholder="abc123@gmail.com" /><br />
+            <label for="attraction">Favourite Attractions: </label><br />
+            <select class="input-field">
+                <option selected>Red Fort</option>
+                <option>Jama Mashjid</option>
+                <option>Purana Qila</option>
+                <option>Qutab Minar</option>
+            </select><br />
+            <label for="suggestions">Suggestions:</label><br />
+            <textarea name="suggestions" id="suggest" cols="25" rows="4" class="input-field"></textarea><br />
+            <label for="newsLetter">Newsletter:</label>
+            <input type="checkbox" name="news" id="news" class="checkbox" />Subscribe to us.
+            <br />
+            <input type="submit" value="Submit" class="button" />
+        </form>
+    </section>
+    <hr />
+    <section id="quotes">
+        <h2>What Citizens Say</h2>
+        <p>
+            <span><em>"The best thing about Delhi is that it always has something new to
+                    offer."</em></span>
+            ~ Alena
+        </p>
+        <p>
+            <span><em>"Each time I visit, I fall in love with Delhi all over again."</em></span>
+            ~ Mridul
+        </p>
+    </section>
+    <hr />
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <address>
+            <i>
+                <p>Delhi Tourism Office</p>
+                <p>250, Jesus Court</p>
+                <p>
+                    Email:
+                    <a href="mailto:tourism1947@gmail.com">tourism1947@gmail.com</a>
+                </p>
+                <p>9746789002</p>
+            </i>
+        </address>
+    </section>
+    <hr />
+    <section>
+        <footer>
+            <p>&copy; 2023 Delhi Tourism, Delhi is life.</p>
+        </footer>
+    </section>
+</body>
+
+</html>
